@@ -1,12 +1,19 @@
-# React + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![3D Parallax Developer Portfolio Thumbnail](https://i.ibb.co/86NQD5c/thumbnail-3d-portfolio-smaller.jpg)
 
-Currently, two official plugins are available:
+## About Me
+todo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies (probably)
+- Vite - Build tool for the boilerplate and structure
+- JavaScript - Programming language
+- React - JavaScript library for building user interfaces
+- Tailwind - CSS framework
+- Three.js - Animated 3D graphics
+- Framer Motion - Interactive animations
+- Hostinger - Web hosting platform
+- GitHub - Version control & CI/CD
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Extra Resources
+- [Retro Computer by heycronus](https://sketchfab.com/3d-models/retro-computer-pc-low-poly-3d-model-980ecb6ba9d748948b40a09bf7d855b4)
