@@ -14,7 +14,13 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
+    // Hysteresis: flip on past 32px, flip off below 8px — prevents the navbar
+    // background from oscillating at a single threshold, which was producing a
+    // visible flickering hairline at the bottom edge during slow scrolls.
+    const onScroll = () => {
+      const y = window.scrollY;
+      setScrolled((prev) => (prev ? y > 8 : y > 32));
+    };
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
@@ -25,10 +31,8 @@ export default function Navbar() {
       initial={{ y: -32, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'backdrop-blur-md bg-bg/70 border-b border-border/60'
-          : 'bg-transparent'
+      className={`fixed top-0 inset-x-0 z-50 transition-colors duration-300 ${
+        scrolled ? 'backdrop-blur-md bg-bg/80' : 'bg-transparent'
       }`}
     >
       <nav className="max-w-6xl mx-auto px-6 sm:px-8 h-16 flex items-center justify-between">

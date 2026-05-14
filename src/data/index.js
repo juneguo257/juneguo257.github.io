@@ -90,7 +90,6 @@ export const projects = [
     description: 'A cloud-based web search engine, built fully from scratch.',
     points: [
       'Built the distributed web crawler that fans out across EC2 workers, dedupes URLs against a custom KV store, and streams raw HTML downstream for indexing.',
-      'Integrated with a from-scratch web server, key-value store, analytics engine, indexer, and PageRank pipeline — all stitched together to run across the cloud.',
     ],
   },
   {
@@ -99,7 +98,6 @@ export const projects = [
     description: 'A complete UNIX-like operating system, built from scratch.',
     points: [
       'Priority-based process scheduler, FAT-style file system, and a custom shell with piping and job control.',
-      'Implemented 20+ system calls using low-level signal handling, threading, and locks.',
     ],
   },
   {
@@ -107,8 +105,7 @@ export const projects = [
     stack: ['AWS', 'JavaScript', 'React', 'Kubernetes'],
     description: 'A social media platform deployed across a Kubernetes cluster on AWS EC2.',
     points: [
-      'S3 for media, RDS for structured user data, ChromaDB as a vector-based recommendation datastore.',
-      'EMR + Apache Livy power social graph–based ranking; React serves the front-end.',
+      'S3 for media, RDS for structured user data, ChromaDB for recommendations, EMR + Livy for social graph-based ranking, React for frontend.',
     ],
   },
 ];
