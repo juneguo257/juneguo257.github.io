@@ -81,7 +81,7 @@ export const projects = [
     stack: ['eBPF', 'Python', 'C', 'Linux'],
     description: 'Bubblewrap, but eBPF.',
     points: [
-      'Sandboxes Linux processes by hooking eBPF programs into LSM and seccomp paths; filesystem and syscall policies can be added or revoked live with bumblewrapctl.',
+      'Engineered a high-performance Linux sandbox via eBPF LSM and syscall probes, with a dynamic control interface (bumblewrapctl) to inject and revoke filesystem and syscall restrictions at runtime via BPF maps.',
     ],
   },
   {
